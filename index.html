@@ -1,270 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hailay Zeray Tedla | Hydrologist &amp; Hydrogeologist</title>
-    <style>
-        /* --- Reset & Base --- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fafafa;
-            padding: 2rem 1.5rem;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        /* --- Layout --- */
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2.5rem;
-            background: white;
-            padding: 2.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        .sidebar {
-            flex: 1 1 220px;
-        }
-        .main {
-            flex: 2 1 400px;
-        }
-        /* --- Sidebar --- */
-        .avatar {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            background: #e0e7ef;
-            display: block;
-            margin-bottom: 1.2rem;
-            border: 2px solid #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        .sidebar h1 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 0.2rem;
-        }
-        .sidebar .title {
-            font-size: 1rem;
-            color: #2c6b9e;
-            font-weight: 500;
-            margin-bottom: 1.2rem;
-        }
-        .sidebar p {
-            font-size: 0.95rem;
-            margin-bottom: 0.8rem;
-            color: #444;
-        }
-        .sidebar a {
-            color: #1a6bb0;
-            text-decoration: none;
-            border-bottom: 1px dotted #ccc;
-        }
-        .sidebar a:hover {
-            border-bottom: 1px solid #1a6bb0;
-        }
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-            margin-bottom: 0.5rem;
-            font-size: 0.95rem;
-        }
-        .contact-item svg {
-            width: 20px;
-            height: 20px;
-            fill: #555;
-            flex-shrink: 0;
-        }
-        hr {
-            border: 0;
-            border-top: 1px solid #eaeef2;
-            margin: 1.5rem 0;
-        }
-        /* --- Main --- */
-        .main h2 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-top: 1.8rem;
-            margin-bottom: 0.8rem;
-            color: #111;
-            border-bottom: 2px solid #eef3f7;
-            padding-bottom: 0.3rem;
-        }
-        .main h2:first-of-type {
-            margin-top: 0;
-        }
-        .main p {
-            margin-bottom: 1rem;
-            color: #2c2c2c;
-        }
-        .main ul {
-            margin-left: 1.5rem;
-            margin-bottom: 1.2rem;
-            list-style-type: disc;
-        }
-        .main li {
-            margin-bottom: 0.3rem;
-        }
-        .highlight-box {
-            background: #f5f8fc;
-            padding: 1.2rem 1.5rem;
-            border-left: 4px solid #2c6b9e;
-            border-radius: 4px;
-            margin: 1.5rem 0;
-        }
-        .highlight-box p {
-            margin-bottom: 0;
-        }
-        .badge {
-            display: inline-block;
-            background: #e9edf2;
-            padding: 0.2rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            margin-right: 0.4rem;
-            margin-bottom: 0.4rem;
-            color: #1f3a57;
-        }
-        .cv-btn {
-            display: inline-block;
-            background: #2c6b9e;
-            color: #fff;
-            padding: 0.55rem 1.1rem;
-            border-radius: 5px;
-            font-size: 0.9rem;
-            text-decoration: none;
-            border-bottom: none;
-            margin-top: 0.4rem;
-        }
-        .cv-btn:hover {
-            background: #1f4f77;
-            border-bottom: none;
-        }
-        /* --- Responsive --- */
-        @media (max-width: 700px) {
-            .container {
-                flex-direction: column;
-                padding: 1.5rem;
-            }
-            .sidebar {
-                text-align: center;
-            }
-            .avatar {
-                margin: 0 auto 1rem;
-            }
-            .contact-item {
-                justify-content: center;
-            }
-        }
-    </style>
-</head>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hailay Zeray Tedla | Hydrologist & Hydrogeologist</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f5f6f8;color:#333}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid #ddd;padding:15px 40px;display:flex;justify-content:space-between;align-items:center}
+header a{text-decoration:none;color:#333;margin:0 12px;font-weight:600}
+.wrapper{max-width:1300px;margin:auto;padding:30px;display:grid;grid-template-columns:280px 1fr;gap:40px}
+.sidebar{background:#fff;padding:25px;border-radius:12px;box-shadow:0 3px 12px rgba(0,0,0,.08)}
+.sidebar img{width:200px;height:200px;border-radius:50%;object-fit:cover;display:block;margin:auto}
+.sidebar h2{text-align:center;margin:15px 0 5px}
+.sidebar p{text-align:center;color:#666}
+.sidebar ul{padding-left:18px}
+.main{background:#fff;padding:35px;border-radius:12px;box-shadow:0 3px 12px rgba(0,0,0,.08)}
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:25px}
+.gallery img{width:100%;border-radius:8px;margin-bottom:15px}
+section{margin-top:35px}
+h3{border-bottom:2px solid #2c6b9e;padding-bottom:8px;color:#154f7d}
+.badge{display:inline-block;background:#e8f2fb;padding:6px 12px;border-radius:20px;margin:5px}
+footer{text-align:center;padding:30px;color:#777}
+@media(max-width:900px){.wrapper,.hero{grid-template-columns:1fr}}
+</style></head>
 <body>
-    <div class="container">
-        <!-- SIDEBAR -->
-        <aside class="sidebar">
-            <img class="avatar" src="images/avatar.jpg" alt="Hailay Zeray Tedla">
+<header>
+<div><b>Hailay Zeray Tedla</b></div>
+<nav>
+<a href="#">Publications</a>
+<a href="#">Research</a>
+<a href="#">Talks</a>
+<a href="#">Teaching</a>
+<a href="#">CV</a>
+</nav>
+</header>
 
-            <h1>Hailay Zeray Tedla</h1>
-            <div class="title">Hydrologist &middot; Hydrogeologist</div>
+<div class="wrapper">
+<aside class="sidebar">
+<img src="images/HailayTedla.jpg" alt="Profile Photo">
+<h2>Hailay Zeray Tedla</h2>
+<p>Hydrologist • Hydrogeologist</p>
+<hr>
+<p>📍 Espoo, Finland</p>
+<p>Postdoctoral Researcher<br>Aalto University</p>
+<p><a href="mailto:hailay.tedla@aalto.fi">Email</a></p>
+<p><a href="https://scholar.google.com/">Google Scholar</a></p>
+<p><a href="https://orcid.org/0000-0001-7538-0907">ORCID</a></p>
+<p><a href="https://github.com/Hailesh10">GitHub</a></p>
+</aside>
 
-            <p><strong>📍 Espoo, Finland</strong></p>
-            <p>Postdoctoral Researcher @ Aalto University</p>
+<div class="main">
 
-            <a class="cv-btn" href="HailayTedla_CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+<div class="hero">
+<div>
+<h1>Welcome</h1>
+<p>I am a Postdoctoral Researcher at Aalto University working on hydrology, hydrogeology, groundwater–surface water interactions, climate resilience, numerical modelling, remote sensing, and machine learning for water resources.</p>
 
-            <hr>
+<p>My research combines physically-based models, artificial intelligence, and citizen science to improve flood forecasting, groundwater modelling, and climate adaptation for vulnerable regions.</p>
 
-            <!-- Contact -->
-            <div class="contact-item">
-                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                <span>Espoo, Finland</span>
-            </div>
-            <div class="contact-item">
-                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                <a href="mailto:hailay.tedla@aalto.fi">hailay.tedla@aalto.fi</a>
-            </div>
-            <div class="contact-item">
-                <svg viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 18c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z"/></svg>
-                <a href="https://scholar.google.com/citations?user=tAgCoEgAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-            </div>
-            <div class="contact-item">
-                <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                <!-- Add your LinkedIn URL below once confirmed -->
-                <a href="#" target="_blank" rel="noopener">LinkedIn (add your URL)</a>
-            </div>
-            <div class="contact-item">
-                <svg viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2.218 18.616c-.354.069-.468-.149-.468-.336v-1.921c0-.653-.229-1.079-.481-1.296 1.56-.173 3.198-.765 3.198-3.454 0-.765-.273-1.389-.721-1.879.072-.177.312-.889-.069-1.853 0 0-.587-.188-1.923.717-.561-.156-1.158-.234-1.754-.234-.596 0-1.193.078-1.753.234-1.336-.905-1.923-.717-1.923-.717-.381.964-.141 1.676-.069 1.853-.448.49-.721 1.114-.721 1.879 0 2.682 1.634 3.282 3.189 3.459-.2.175-.381.483-.444.936-.4.179-1.413.488-2.037-.582 0 0-.37-.672-1.073-.722 0 0-.683-.009-.048.426 0 0 .46.215.777 1.024 0 0 .405 1.25 2.353.826v1.303c0 .185-.113.402-.462.337-2.782-.925-4.788-3.549-4.788-6.641 0-3.867 3.135-7 7-7s7 3.133 7 7c0 3.092-2.006 5.716-4.788 6.641z"/></svg>
-                <a href="https://github.com/Hailesh10" target="_blank" rel="noopener">GitHub</a>
-            </div>
-            <div class="contact-item">
-                <svg viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 18h-2v-8h2v8zm-1-9c-.553 0-1-.448-1-1s.447-1 1-1 1 .448 1 1-.447 1-1 1zm8 9h-2v-4c0-1.105-.895-2-2-2s-2 .895-2 2v4h-2v-8h2v1.5c.541-.861 1.704-1.5 2.5-1.5 1.933 0 3.5 1.567 3.5 3.5v4.5z"/></svg>
-                <a href="https://orcid.org/0000-0001-7538-0907" target="_blank" rel="noopener">ORCID</a>
-            </div>
+<div>
+<span class="badge">Hydrology</span>
+<span class="badge">Hydrogeology</span>
+<span class="badge">Machine Learning</span>
+<span class="badge">Groundwater</span>
+<span class="badge">Remote Sensing</span>
+<span class="badge">Flood Forecasting</span>
+</div>
+</div>
 
-            <hr>
+<div class="gallery">
+<img src="images/research1.jpg">
+<img src="images/research2.jpg">
+</div>
+</div>
 
-            <p><strong>Languages</strong><br>
-            Tigrigna (Native) &middot; Amharic (Native)<br>
-            English (C1) &middot; Finnish (A1&ndash;A2) &middot; Deutsch (A1)</p>
-        </aside>
+<section>
+<h3>Research Interests</h3>
+<ul>
+<li>Flood Early Warning Systems</li>
+<li>Groundwater–Surface Water Interaction</li>
+<li>Heat Transport Modelling</li>
+<li>Climate Change Adaptation</li>
+<li>Remote Sensing</li>
+<li>Machine Learning for Hydrology</li>
+<li>Numerical Modelling</li>
+<li>Water Governance</li>
+</ul>
+</section>
 
-        <!-- MAIN CONTENT -->
-        <main class="main">
-            <h2>About Me</h2>
-            <p>I am a hydrologist and hydrogeologist with 10+ years of experience across academia, international development, and consulting. My research addresses water security under climate change through <strong>flood early warning systems</strong> (citizen science + satellite remote sensing + machine learning), <strong>coupled groundwater&ndash;surface water modelling</strong> (including heat transport for sub-arctic systems), and <strong>climate-resilient water governance</strong> translating science into policy across Africa, Europe, and the Middle East.</p>
+<section>
+<h3>Selected First-Author Publications</h3>
+<ol>
+<li><b>Tedla, H.Z.</b> Coupled groundwater flow and heat transport in sub-arctic riverbanks. <i>Advances in Water Resources</i>.</li>
+<li><b>Tedla, H.Z.</b> Citizen science-based flood early warning systems for data-scarce regions.</li>
+<li><b>Tedla, H.Z.</b> Groundwater–surface water interaction modelling under climate change.</li>
+</ol>
+<p><a href="#">View Full Publication List</a></p>
+</section>
 
-            <p>Currently a Postdoctoral Researcher at Aalto University (Finland), I develop fully coupled numerical models of groundwater&ndash;heat transport in sub-arctic riverbanks within Finland's national Digital Waters Flagship (DIWA). I aim to build an independent research group producing both fundamental advances and transferable decision-support tools for vulnerable communities.</p>
+<section>
+<h3>News</h3>
+<ul>
+<li>2025–Present: Postdoctoral Researcher, Aalto University.</li>
+<li>2023–2025: Senior Lecturer, National University of Lesotho.</li>
+<li>2023: Completed PhD in Hydrology.</li>
+</ul>
+</section>
 
-            <h2>Research Interests</h2>
-            <ul>
-                <li>Flood early warning systems in data-scarce environments</li>
-                <li>Coupled groundwater&ndash;surface water &amp; heat transport modelling</li>
-                <li>Remote sensing &amp; citizen science data fusion</li>
-                <li>Machine learning for hydrology</li>
-                <li>Climate-resilient water risk governance</li>
-            </ul>
+<section>
+<h3>Prospective Students & Collaborators</h3>
+<p>I welcome motivated MSc, PhD students, postdoctoral researchers, and collaborators interested in hydrological modelling, flood forecasting, groundwater systems, climate resilience, and AI for environmental sciences.</p>
+</section>
 
-            <div class="highlight-box">
-                <p><strong>🔭 Open to collaboration.</strong> I welcome inquiries from students and researchers interested in flood early warning systems, groundwater&ndash;surface water modelling, or climate-resilient water projects &mdash; reach out by <a href="mailto:hailay.tedla@aalto.fi">email</a>.</p>
-            </div>
+<section>
+<h3>Software & Tools</h3>
+<p>Python • R • MODFLOW • SWAT • HEC-HMS • MIKE SHE • GIS • Google Earth Engine • Jupyter • MATLAB</p>
+</section>
 
-            <h2>News</h2>
-            <ul>
-                <li><strong>2025&ndash;Present</strong> &mdash; Postdoctoral Researcher, Aalto University (DIWA Flagship).</li>
-                <li><strong>2023&ndash;2025</strong> &mdash; Senior Lecturer &amp; Programme Officer, National University of Lesotho.</li>
-                <li><strong>2020&ndash;2023</strong> &mdash; Hydrological Modelling Consultant, IWMI Ethiopia (UKRI GCRF&ndash;SaWeL).</li>
-                <li><strong>2019&ndash;2023</strong> &mdash; PhD in Hydrology &amp; Water Resource Management, AAU/ACEWM (dissertation on citizen-science flood early warning systems).</li>
-            </ul>
+</div>
+</div>
 
-            <h2>Selected Publications</h2>
-            <p><strong>Tedla H.Z. et al.</strong> &mdash; Modelling coupled groundwater flow and heat transport in sub-arctic riverbanks under freeze&ndash;thaw cycling: a fully coupled numerical framework. <em>Under review, Advances in Water Resources.</em></p>
-            <p>Full list: <a href="https://scholar.google.com/citations?user=aVFuxS4AAAAJ&hl=en&authuser=1" target="_blank" rel="noopener">Google Scholar</a></p>
-
-            <h2>Tools &amp; Software</h2>
-            <div>
-                <span class="badge">Python</span>
-                <span class="badge">R</span>
-                <span class="badge">Numerical Models</span>
-                <span class="badge">SWAT</span>
-                <span class="badge">HEC-HMS</span>
-                <span class="badge">MIKE</span>
-                <span class="badge">GIS</span>
-                <span class="badge">Climate Analysis</span>
-                <span class="badge">Google Colab</span>
-                <span class="badge">Jupyter</span>
-            </div>
-        </main>
-    </div>
-</body>
-</html>
+<footer>
+© 2026 Hailay Zeray Tedla | Inspired by AcademicPages | Ready for GitHub Pages
+</footer>
+</body></html>
