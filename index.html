@@ -1,532 +1,496 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hailay Zeray Tedla · Academic & Research</title>
-  <!-- Font & Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Hailay Zeray Tedla · Hydrologist & Researcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f8fafc;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #fafafa;
-      color: #1a1a1a;
-      line-height: 1.6;
-      scroll-behavior: smooth;
-    }
+        /* Header */
+        .site-header {
+            background: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .nav-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0.8rem 0;
+        }
+        .logo a {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #0a2e3f;
+            text-decoration: none;
+        }
+        .logo a i {
+            color: #1a6e8a;
+            margin-right: 6px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 0.3rem 1.2rem;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: #2d4a5e;
+            padding: 0.3rem 0.2rem;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .nav-links a:hover {
+            border-bottom-color: #1a6e8a;
+            color: #0a2a3a;
+        }
+        .nav-links a i {
+            margin-right: 5px;
+            font-size: 0.8rem;
+            color: #2a6f8a;
+        }
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
+        /* Sections */
+        section {
+            padding: 3.5rem 0 3rem;
+            border-bottom: 1px solid #eef2f6;
+            scroll-margin-top: 5rem;
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #0a2e3f;
+            margin-bottom: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+        .section-title i {
+            color: #1a6e8a;
+            font-size: 1.6rem;
+            width: 2rem;
+        }
 
-    /* header / nav */
-    .site-header {
-      background: white;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      backdrop-filter: blur(2px);
-      background: rgba(255,255,255,0.92);
-      border-bottom: 1px solid #eaeef2;
-    }
+        /* Home */
+        #home {
+            padding-top: 2.5rem;
+            padding-bottom: 2rem;
+        }
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: #0a2e3f;
+            letter-spacing: -0.02em;
+        }
+        .hero .subhead {
+            font-size: 1.2rem;
+            color: #1f4b61;
+            margin-top: 0.1rem;
+        }
+        .hero .affiliation {
+            font-size: 1rem;
+            color: #2f5f77;
+            margin-top: 0.2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem 1.2rem;
+        }
+        .hero .affiliation i {
+            color: #1a6e8a;
+            width: 1.3rem;
+        }
+        .hero-bio {
+            max-width: 800px;
+            margin-top: 1.2rem;
+            font-size: 1.02rem;
+            color: #1a3d4f;
+            background: #eef5f9;
+            padding: 1.2rem 1.8rem;
+            border-radius: 16px;
+            border-left: 4px solid #1a6e8a;
+        }
+        .hero-bio i {
+            color: #1a6e8a;
+            margin-right: 6px;
+        }
+        .badge-pill {
+            display: inline-block;
+            background: #e6eff5;
+            color: #14506a;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            border: 1px solid #cbdae5;
+            margin-top: 0.2rem;
+        }
+        .badge-pill i {
+            margin-right: 4px;
+        }
+        .badge-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem 1rem;
+            margin-top: 1rem;
+        }
 
-    .nav-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding: 0.9rem 0;
-    }
+        /* Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.2rem;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 1.4rem 1.3rem;
+            border: 1px solid #e9edf2;
+            transition: box-shadow 0.2s, border-color 0.2s;
+        }
+        .card:hover {
+            border-color: #c0d0dd;
+            box-shadow: 0 8px 24px rgba(0,40,60,0.06);
+        }
+        .card h3 {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #0a2e3f;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 0.3rem;
+        }
+        .card h3 i {
+            color: #1a6e8a;
+            width: 1.2rem;
+            font-size: 1rem;
+        }
+        .card .meta {
+            font-size: 0.85rem;
+            color: #3f6a80;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        .card p {
+            color: #2a4e64;
+            font-size: 0.93rem;
+        }
 
-    .logo a {
-      font-weight: 700;
-      font-size: 1.3rem;
-      letter-spacing: -0.02em;
-      color: #0b2b3d;
-      text-decoration: none;
-    }
-    .logo a i {
-      color: #1f6e8c;
-      margin-right: 6px;
-    }
+        /* Lists */
+        .list-block {
+            list-style: none;
+            margin-top: 0.5rem;
+        }
+        .list-block li {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #e6edf4;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+            color: #1a4057;
+        }
+        .list-block li:last-child {
+            border-bottom: none;
+        }
+        .list-block li i {
+            color: #1a6e8a;
+            width: 1.4rem;
+            margin-top: 0.15rem;
+            font-size: 0.95rem;
+        }
+        .list-block .title {
+            font-weight: 600;
+        }
+        .list-block .detail {
+            font-size: 0.9rem;
+            color: #3a6a82;
+        }
 
-    .nav-links {
-      display: flex;
-      gap: 0.5rem 1.2rem;
-      flex-wrap: wrap;
-      list-style: none;
-    }
+        /* Teaching items */
+        .teaching-item {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 1.1rem 1.5rem;
+            margin-bottom: 0.8rem;
+            border: 1px solid #e9edf2;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 0.4rem 1.2rem;
+        }
+        .teaching-item .course {
+            font-weight: 600;
+            font-size: 1rem;
+            color: #0a2e3f;
+        }
+        .teaching-item .role {
+            background: #e9f0f6;
+            padding: 0.1rem 1rem;
+            border-radius: 30px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #14506a;
+        }
+        .teaching-item .term {
+            color: #36667e;
+            font-size: 0.88rem;
+            margin-left: auto;
+        }
+        .teaching-item .badge-pill {
+            margin-left: auto;
+        }
 
-    .nav-links a {
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 0.95rem;
-      color: #2c3e50;
-      padding: 0.3rem 0.2rem;
-      border-bottom: 2px solid transparent;
-      transition: 0.2s;
-    }
+        /* Footer */
+        .site-footer {
+            padding: 2rem 0 1.8rem;
+            border-top: 1px solid #e2e9f0;
+            color: #2f5e74;
+            font-size: 0.92rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .site-footer i {
+            color: #1a6e8a;
+        }
 
-    .nav-links a:hover {
-      border-bottom-color: #1f6e8c;
-      color: #0a2a3a;
-    }
-
-    .nav-links a i {
-      margin-right: 6px;
-      font-size: 0.85rem;
-      color: #2a6f8a;
-    }
-
-    /* sections */
-    section {
-      padding: 4rem 0 3.5rem;
-      border-bottom: 1px solid #eef2f6;
-      scroll-margin-top: 5rem;
-    }
-
-    section:last-of-type {
-      border-bottom: none;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      color: #0b2b3d;
-      margin-bottom: 1.8rem;
-      display: flex;
-      align-items: center;
-      gap: 0.7rem;
-    }
-
-    .section-title i {
-      color: #1f6e8c;
-      font-size: 1.8rem;
-      width: 2rem;
-    }
-
-    /* home / hero */
-    #home {
-      padding-top: 3rem;
-      padding-bottom: 2rem;
-    }
-
-    .hero {
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
-    }
-
-    .hero h1 {
-      font-size: 2.8rem;
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      color: #0b2b3d;
-    }
-
-    .hero .subhead {
-      font-size: 1.3rem;
-      font-weight: 400;
-      color: #1f4b61;
-      margin-top: 0.1rem;
-    }
-
-    .hero .affiliation {
-      font-size: 1.1rem;
-      color: #2f5f77;
-      margin-top: 0.2rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem 1rem;
-      flex-wrap: wrap;
-    }
-
-    .hero .affiliation i {
-      color: #1f6e8c;
-      width: 1.4rem;
-    }
-
-    .hero-bio {
-      max-width: 800px;
-      margin-top: 1.4rem;
-      font-size: 1.05rem;
-      color: #1a3d4f;
-      background: #f0f6fa;
-      padding: 1.2rem 1.8rem;
-      border-radius: 20px;
-      border-left: 4px solid #1f6e8c;
-    }
-
-    .hero-bio i {
-      color: #1f6e8c;
-      margin-right: 6px;
-    }
-
-    .badge-pill {
-      display: inline-block;
-      background: #eef3f8;
-      color: #1f5a73;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.3px;
-      padding: 0.2rem 0.9rem;
-      border-radius: 30px;
-      border: 1px solid #d8e2ec;
-      margin-top: 0.3rem;
-    }
-
-    .badge-pill i {
-      margin-right: 4px;
-    }
-
-    /* cards */
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 1.8rem;
-      margin: 1.5rem 0 0.5rem;
-    }
-
-    .card {
-      background: white;
-      border-radius: 20px;
-      padding: 1.5rem 1.4rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.02), 0 1px 3px rgba(0,0,0,0.04);
-      border: 1px solid #e9edf2;
-      transition: 0.2s;
-    }
-
-    .card:hover {
-      border-color: #cbd8e3;
-      box-shadow: 0 8px 20px rgba(0, 40, 60, 0.06);
-    }
-
-    .card h3 {
-      font-weight: 600;
-      font-size: 1.1rem;
-      color: #0b2b3d;
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      margin-bottom: 0.4rem;
-    }
-
-    .card h3 i {
-      color: #1f6e8c;
-      font-size: 1rem;
-      width: 1.2rem;
-    }
-
-    .card .meta {
-      font-size: 0.9rem;
-      color: #3f6a80;
-      margin: 0.3rem 0 0.6rem;
-      font-weight: 500;
-    }
-
-    .card p {
-      color: #2a4e64;
-      font-size: 0.95rem;
-    }
-
-    .list-block {
-      list-style: none;
-      margin-top: 0.8rem;
-    }
-
-    .list-block li {
-      padding: 0.7rem 0;
-      border-bottom: 1px dashed #e0e8ef;
-      display: flex;
-      align-items: flex-start;
-      gap: 0.7rem;
-      color: #1a4057;
-    }
-
-    .list-block li:last-child {
-      border-bottom: none;
-    }
-
-    .list-block li i {
-      color: #1f6e8c;
-      width: 1.4rem;
-      margin-top: 0.2rem;
-      font-size: 0.9rem;
-    }
-
-    .list-block .title {
-      font-weight: 600;
-    }
-
-    .list-block .detail {
-      font-size: 0.9rem;
-      color: #3a6a82;
-    }
-
-    .teaching-item {
-      background: white;
-      border-radius: 16px;
-      padding: 1.2rem 1.6rem;
-      margin-bottom: 1rem;
-      border: 1px solid #e9edf2;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      gap: 0.6rem 1.5rem;
-    }
-
-    .teaching-item .course {
-      font-weight: 600;
-      font-size: 1.05rem;
-      color: #0b2b3d;
-    }
-
-    .teaching-item .role {
-      background: #e9f0f6;
-      padding: 0.15rem 1rem;
-      border-radius: 30px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: #1a4b66;
-    }
-
-    .teaching-item .term {
-      color: #36667e;
-      font-size: 0.9rem;
-      margin-left: auto;
-    }
-
-    /* footer */
-    .site-footer {
-      margin-top: 1.5rem;
-      padding: 2.5rem 0 2rem;
-      border-top: 1px solid #e2e9f0;
-      color: #2f5e74;
-      font-size: 0.95rem;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .site-footer i {
-      color: #1f6e8c;
-      margin: 0 4px;
-    }
-
-    @media (max-width: 700px) {
-      .container { padding: 0 1.2rem; }
-      .nav-bar { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
-      .nav-links { width: 100%; justify-content: flex-start; gap: 0.4rem 1rem; }
-      .hero h1 { font-size: 2.2rem; }
-      .section-title { font-size: 1.7rem; }
-      .card-grid { grid-template-columns: 1fr; }
-      .teaching-item { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
-      .teaching-item .term { margin-left: 0; }
-    }
-
-    @media (max-width: 480px) {
-      .hero .subhead { font-size: 1.1rem; }
-    }
-  </style>
+        /* Responsive */
+        @media (max-width: 700px) {
+            .container { padding: 0 1.2rem; }
+            .nav-bar { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
+            .nav-links { width: 100%; justify-content: flex-start; gap: 0.3rem 1rem; }
+            .hero h1 { font-size: 2rem; }
+            .section-title { font-size: 1.6rem; }
+            .card-grid { grid-template-columns: 1fr; }
+            .teaching-item { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
+            .teaching-item .term { margin-left: 0; }
+            .teaching-item .badge-pill { margin-left: 0; }
+        }
+        @media (max-width: 480px) {
+            .hero .subhead { font-size: 1rem; }
+            .hero h1 { font-size: 1.7rem; }
+        }
+    </style>
 </head>
 <body>
 
+<!-- ===== HEADER ===== -->
 <header class="site-header">
-  <div class="container nav-bar">
-    <div class="logo">
-      <a href="#home"><i class="fas fa-water"></i> H.Z. Tedla</a>
+    <div class="container nav-bar">
+        <div class="logo">
+            <a href="#home"><i class="fas fa-water"></i> H.Z. Tedla</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#research"><i class="fas fa-flask"></i> Research</a></li>
+            <li><a href="#publications"><i class="fas fa-file-alt"></i> Publications</a></li>
+            <li><a href="#talks"><i class="fas fa-chalkboard-teacher"></i> Talks</a></li>
+            <li><a href="#teaching"><i class="fas fa-users"></i> Teaching</a></li>
+        </ul>
     </div>
-    <ul class="nav-links">
-      <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-      <li><a href="#research"><i class="fas fa-flask"></i> Research</a></li>
-      <li><a href="#publications"><i class="fas fa-file-alt"></i> Publications</a></li>
-      <li><a href="#talks"><i class="fas fa-chalkboard-teacher"></i> Talks</a></li>
-      <li><a href="#teaching"><i class="fas fa-users"></i> Teaching</a></li>
-    </ul>
-  </div>
 </header>
 
+<!-- ===== MAIN ===== -->
 <main class="container">
 
-  <!-- ===== HOME ===== -->
-  <section id="home">
-    <div class="hero">
-      <h1>Hailay Zeray Tedla</h1>
-      <div class="subhead">Senior Hydrologist · Hydrogeologist · Postdoctoral Researcher</div>
-      <div class="affiliation">
-        <i class="fas fa-university"></i> Aalto University · Digital Waters Flagship (DIWA)
-        <span style="margin:0 0.4rem;">|</span>
-        <i class="fas fa-envelope"></i> hailay.tedla@aalto.fi
-      </div>
-      <div class="hero-bio">
-        <i class="fas fa-quote-left"></i> 
-        Water security under climate change · integrated flood early warning · coupled groundwater–surface water modelling · citizen science &amp; machine learning · policy translation across Africa, Europe, and the Middle East.
-      </div>
-      <div style="margin-top: 1.2rem; display: flex; flex-wrap: wrap; gap: 0.8rem 1.5rem;">
-        <span class="badge-pill"><i class="fas fa-graduation-cap"></i> PhD Hydrology (AAU)</span>
-        <span class="badge-pill"><i class="fas fa-globe-africa"></i> Erasmus Mundus MSc</span>
-        <span class="badge-pill"><i class="fas fa-trophy"></i> UKRI GCRF · World Bank</span>
-        <span class="badge-pill"><i class="fas fa-chart-line"></i> 10+ years experience</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== RESEARCH ===== -->
-  <section id="research">
-    <h2 class="section-title"><i class="fas fa-flask"></i> Research focus</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3><i class="fas fa-bolt"></i> Flood early warning</h3>
-        <div class="meta">citizen science · satellite RS · ML</div>
-        <p>Fusing crowd-sourced gauges, MODIS/Sentinel-2 and HEC-HMS to deliver actionable forecasts in data-scarce environments. Adopted by Ethiopian disaster agency.</p>
-        <span class="badge-pill"><i class="far fa-clock"></i> ongoing</span>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-thermometer-half"></i> Sub‑arctic heat transport</h3>
-        <div class="meta">coupled groundwater–surface water</div>
-        <p>Fully coupled numerical model of groundwater‑heat transport in sub‑arctic riverbanks – quantifying freeze‑thaw dynamics &amp; lateral erosion (DIWA Flagship).</p>
-        <span class="badge-pill"><i class="far fa-clock"></i> 2025–present</span>
-      </div>
-      <div class="card">
-        <h3><i class="fas fa-handshake"></i> Water risk governance</h3>
-        <div class="meta">policy · Africa · Europe · Middle East</div>
-        <p>Translating hydrological science into policy and decision‑support tools for vulnerable communities. Multi‑partner proposals (EU Horizon, AfDB).</p>
-        <span class="badge-pill"><i class="far fa-clock"></i> active</span>
-      </div>
-    </div>
-    <div style="margin-top:1.2rem; background:#f4f9fe; padding:0.8rem 1.4rem; border-radius:40px; display:inline-block; font-size:0.9rem; color:#1d4b66;">
-      <i class="fas fa-arrow-right" style="margin-right:8px;"></i> Full research programme &amp; tools available on request
-    </div>
-  </section>
-
-  <!-- ===== PUBLICATIONS ===== -->
-  <section id="publications">
-    <h2 class="section-title"><i class="fas fa-file-alt"></i> Publications &amp; in progress</h2>
-    <ul class="list-block">
-      <li>
-        <i class="fas fa-file-pdf"></i>
-        <div>
-          <span class="title">“Modelling coupled groundwater flow and heat transport in sub‑arctic riverbanks under freeze‑thaw cycling: a fully coupled numerical framework”</span><br>
-          <span class="detail">Tedla, H.Z. et al. (under review) · <i>Water Resources Research</i></span>
-          <span class="badge-pill" style="margin-left:0.8rem;">under review</span>
+    <!-- HOME -->
+    <section id="home">
+        <div class="hero">
+            <h1>Hailay Zeray Tedla</h1>
+            <div class="subhead">Senior Hydrologist · Hydrogeologist · Postdoctoral Researcher</div>
+            <div class="affiliation">
+                <span><i class="fas fa-university"></i> Aalto University · Digital Waters Flagship (DIWA)</span>
+                <span><i class="fas fa-envelope"></i> hailay.tedla@aalto.fi</span>
+            </div>
+            <div class="hero-bio">
+                <i class="fas fa-quote-left"></i>
+                Water security under climate change · integrated flood early warning · coupled groundwater–surface water modelling · citizen science &amp; machine learning · policy translation across Africa, Europe, and the Middle East.
+            </div>
+            <div class="badge-group">
+                <span class="badge-pill"><i class="fas fa-graduation-cap"></i> PhD Hydrology (AAU)</span>
+                <span class="badge-pill"><i class="fas fa-globe-africa"></i> Erasmus Mundus MSc</span>
+                <span class="badge-pill"><i class="fas fa-trophy"></i> UKRI GCRF · World Bank</span>
+                <span class="badge-pill"><i class="fas fa-chart-line"></i> 10+ years experience</span>
+            </div>
         </div>
-      </li>
-      <li>
-        <i class="fas fa-file-pdf"></i>
-        <div>
-          <span class="title">“Citizen‑science‑driven flood early warning in data‑scarce highlands”</span><br>
-          <span class="detail">Tedla, H.Z. (2024) · <i>Journal of Hydrology: Regional Studies</i> (in press)</span>
-          <span class="badge-pill" style="margin-left:0.8rem;">in press</span>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+        <h2 class="section-title"><i class="fas fa-flask"></i> Research Focus</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3><i class="fas fa-bolt"></i> Flood Early Warning</h3>
+                <div class="meta">citizen science · satellite RS · ML</div>
+                <p>Fusing crowd-sourced gauges, MODIS/Sentinel-2 and HEC-HMS to deliver actionable forecasts in data-scarce environments. Adopted by Ethiopian disaster agency.</p>
+                <span class="badge-pill"><i class="far fa-clock"></i> ongoing</span>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-thermometer-half"></i> Sub‑arctic Heat Transport</h3>
+                <div class="meta">coupled groundwater–surface water</div>
+                <p>Fully coupled numerical model of groundwater‑heat transport in sub‑arctic riverbanks – quantifying freeze‑thaw dynamics &amp; lateral erosion (DIWA Flagship).</p>
+                <span class="badge-pill"><i class="far fa-clock"></i> 2025–present</span>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-handshake"></i> Water Risk Governance</h3>
+                <div class="meta">policy · Africa · Europe · Middle East</div>
+                <p>Translating hydrological science into policy and decision‑support tools for vulnerable communities. Multi‑partner proposals (EU Horizon, AfDB).</p>
+                <span class="badge-pill"><i class="far fa-clock"></i> active</span>
+            </div>
         </div>
-      </li>
-      <li>
-        <i class="fas fa-file-pdf"></i>
-        <div>
-          <span class="title">“Integrating satellite remote sensing and HEC‑HMS for urban flood forecasting”</span><br>
-          <span class="detail">Tedla, H.Z., &amp; Mekonnen, A. (2023) · <i>Hydrological Sciences Journal</i></span>
-          <span class="badge-pill" style="margin-left:0.8rem;">published</span>
+        <div style="margin-top:1.2rem; background:#eef5f9; padding:0.6rem 1.4rem; border-radius:40px; display:inline-block; font-size:0.9rem; color:#14506a;">
+            <i class="fas fa-arrow-right" style="margin-right:8px;"></i> Full research programme &amp; tools available on request
         </div>
-      </li>
-    </ul>
-    <div style="margin-top:0.8rem; font-size:0.9rem; color:#2f5a74;">
-      <i class="fas fa-google-scholar"></i> full list: scholar.google.com/citations?user=tAgCoEgAAAAJ
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== TALKS ===== -->
-  <section id="talks">
-    <h2 class="section-title"><i class="fas fa-chalkboard-teacher"></i> Invited talks &amp; panels</h2>
-    <ul class="list-block">
-      <li>
-        <i class="fas fa-microphone-alt"></i>
-        <div>
-          <span class="title">“Systems Approach for Global Water Security”</span><br>
-          <span class="detail">Invited Panellist · IWMI, New Delhi (2025)</span>
-          <span class="badge-pill" style="margin-left:0.8rem;">panel</span>
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+        <h2 class="section-title"><i class="fas fa-file-alt"></i> Publications &amp; In Progress</h2>
+        <ul class="list-block">
+            <li>
+                <i class="fas fa-file-pdf"></i>
+                <div>
+                    <span class="title">“Modelling coupled groundwater flow and heat transport in sub‑arctic riverbanks under freeze‑thaw cycling: a fully coupled numerical framework”</span><br>
+                    <span class="detail">Tedla, H.Z. et al. (under review) · <i>Water Resources Research</i></span>
+                    <span class="badge-pill" style="margin-left:0.8rem;">under review</span>
+                </div>
+            </li>
+            <li>
+                <i class="fas fa-file-pdf"></i>
+                <div>
+                    <span class="title">“Citizen‑science‑driven flood early warning in data‑scarce highlands”</span><br>
+                    <span class="detail">Tedla, H.Z. (2024) · <i>Journal of Hydrology: Regional Studies</i> (in press)</span>
+                    <span class="badge-pill" style="margin-left:0.8rem;">in press</span>
+                </div>
+            </li>
+            <li>
+                <i class="fas fa-file-pdf"></i>
+                <div>
+                    <span class="title">“Integrating satellite remote sensing and HEC‑HMS for urban flood forecasting”</span><br>
+                    <span class="detail">Tedla, H.Z., &amp; Mekonnen, A. (2023) · <i>Hydrological Sciences Journal</i></span>
+                    <span class="badge-pill" style="margin-left:0.8rem;">published</span>
+                </div>
+            </li>
+        </ul>
+        <div style="margin-top:0.8rem; font-size:0.9rem; color:#2f5a74;">
+            <i class="fas fa-google-scholar"></i> full list: scholar.google.com/citations?user=tAgCoEgAAAAJ
         </div>
-      </li>
-      <li>
-        <i class="fas fa-microphone-alt"></i>
-        <div>
-          <span class="title">“Building Resilience to Climate‑Driven Extreme Events”</span><br>
-          <span class="detail">Invited Speaker · AGU/NSF, USA (2024)</span>
-          <span class="badge-pill" style="margin-left:0.8rem;">keynote</span>
+    </section>
+
+    <!-- TALKS -->
+    <section id="talks">
+        <h2 class="section-title"><i class="fas fa-chalkboard-teacher"></i> Invited Talks &amp; Panels</h2>
+        <ul class="list-block">
+            <li>
+                <i class="fas fa-microphone-alt"></i>
+                <div>
+                    <span class="title">“Systems Approach for Global Water Security”</span><br>
+                    <span class="detail">Invited Panellist · IWMI, New Delhi (2025)</span>
+                    <span class="badge-pill" style="margin-left:0.8rem;">panel</span>
+                </div>
+            </li>
+            <li>
+                <i class="fas fa-microphone-alt"></i>
+                <div>
+                    <span class="title">“Building Resilience to Climate‑Driven Extreme Events”</span><br>
+                    <span class="detail">Invited Speaker · AGU/NSF, USA (2024)</span>
+                    <span class="badge-pill" style="margin-left:0.8rem;">keynote</span>
+                </div>
+            </li>
+            <li>
+                <i class="fas fa-microphone-alt"></i>
+                <div>
+                    <span class="title">“Flood Forecasting &amp; Early Warning, Eastern Nile Basin”</span><br>
+                    <span class="detail">Invited Speaker · ENTRO / NBI (2023)</span>
+                    <span class="badge-pill" style="margin-left:0.8rem;">regional</span>
+                </div>
+            </li>
+        </ul>
+        <div style="margin-top:0.8rem; font-size:0.9rem; color:#2f5a74;">
+            <i class="fas fa-calendar-alt"></i> Upcoming: AGU Fall Meeting 2025 · session on sub‑arctic hydrology
         </div>
-      </li>
-      <li>
-        <i class="fas fa-microphone-alt"></i>
-        <div>
-          <span class="title">“Flood Forecasting &amp; Early Warning, Eastern Nile Basin”</span><br>
-          <span class="detail">Invited Speaker · ENTRO / NBI (2023)</span>
-          <span class="badge-pill" style="margin-left:0.8rem;">regional</span>
+    </section>
+
+    <!-- TEACHING -->
+    <section id="teaching">
+        <h2 class="section-title"><i class="fas fa-users"></i> Teaching &amp; Supervision</h2>
+
+        <div class="teaching-item">
+            <span class="course"><i class="fas fa-graduation-cap" style="margin-right:8px; color:#1a6e8a;"></i> Postgraduate Hydrology &amp; Water‑Resources Engineering</span>
+            <span class="role">Senior Lecturer</span>
+            <span class="term">National Univ. of Lesotho · 2023–2025</span>
+            <span class="badge-pill">MSc supervision</span>
         </div>
-      </li>
-    </ul>
-    <div style="margin-top:0.8rem; font-size:0.9rem; color:#2f5a74;">
-      <i class="fas fa-calendar-alt"></i> Upcoming: AGU Fall Meeting 2025 · session on sub‑arctic hydrology
-    </div>
-  </section>
 
-  <!-- ===== TEACHING & EXPERIENCE ===== -->
-  <section id="teaching">
-    <h2 class="section-title"><i class="fas fa-users"></i> Teaching &amp; supervision</h2>
+        <div class="teaching-item">
+            <span class="course"><i class="fas fa-graduation-cap" style="margin-right:8px; color:#1a6e8a;"></i> Hydraulics &amp; Water‑Resources Management</span>
+            <span class="role">Senior Lecturer</span>
+            <span class="term">Addis Ababa Univ. · 2015–2019</span>
+            <span class="badge-pill">200+ students · 8 MSc theses</span>
+        </div>
 
-    <div class="teaching-item">
-      <span class="course"><i class="fas fa-graduation-cap" style="margin-right:10px; color:#1f6e8c;"></i> Postgraduate Hydrology &amp; Water‑Resources Engineering</span>
-      <span class="role">Senior Lecturer</span>
-      <span class="term">National Univ. of Lesotho · 2023–2025</span>
-      <span class="badge-pill">MSc supervision</span>
-    </div>
+        <div class="teaching-item">
+            <span class="course"><i class="fas fa-graduation-cap" style="margin-right:8px; color:#1a6e8a;"></i> Undergraduate Hydrology &amp; Hydraulics</span>
+            <span class="role">Assistant Lecturer</span>
+            <span class="term">Arba Minch Univ. · 2012–2013</span>
+            <span class="badge-pill">community water projects</span>
+        </div>
 
-    <div class="teaching-item">
-      <span class="course"><i class="fas fa-graduation-cap" style="margin-right:10px; color:#1f6e8c;"></i> Hydraulics &amp; Water‑Resources Management</span>
-      <span class="role">Senior Lecturer</span>
-      <span class="term">Addis Ababa Univ. · 2015–2019</span>
-      <span class="badge-pill">200+ students · 8 MSc theses</span>
-    </div>
-
-    <div class="teaching-item">
-      <span class="course"><i class="fas fa-graduation-cap" style="margin-right:10px; color:#1f6e8c;"></i> Undergraduate Hydrology &amp; Hydraulics</span>
-      <span class="role">Assistant Lecturer</span>
-      <span class="term">Arba Minch Univ. · 2012–2013</span>
-      <span class="badge-pill">community water projects</span>
-    </div>
-
-    <div style="margin-top:1.8rem; background: #f6faff; padding: 1rem 1.8rem; border-radius: 40px; border:1px solid #dde7f0;">
-      <i class="fas fa-star" style="color:#1f6e8c;"></i> 
-      <span style="font-weight:500;">Supervision:</span> co‑supervising graduate researchers at Aalto University (DIWA Flagship) · field/lab campaigns, peer‑reviewed manuscripts &amp; grant writing.
-    </div>
-  </section>
+        <div style="margin-top:1.5rem; background: #eef5f9; padding: 0.9rem 1.8rem; border-radius: 40px; border:1px solid #d5e2ec;">
+            <i class="fas fa-star" style="color:#1a6e8a;"></i>
+            <span style="font-weight:500;">Supervision:</span> co‑supervising graduate researchers at Aalto University (DIWA Flagship) · field/lab campaigns, peer‑reviewed manuscripts &amp; grant writing.
+        </div>
+    </section>
 
 </main>
 
 <!-- ===== FOOTER ===== -->
 <footer class="container site-footer">
-  <span><i class="fas fa-water"></i> Hailay Zeray Tedla · hydrology &amp; water security</span>
-  <span>
-    <i class="fas fa-envelope"></i> hailay.tedla@aalto.fi · 
-    <i class="fab fa-google-scholar"></i> scholar · 
-    <i class="fas fa-globe"></i> ORCID
-  </span>
-  <span style="font-size:0.85rem; opacity:0.7;">
-    <i class="fas fa-pen-fancy"></i> CV‑based · updated 2026
-  </span>
+    <span><i class="fas fa-water"></i> Hailay Zeray Tedla · hydrology &amp; water security</span>
+    <span>
+        <i class="fas fa-envelope"></i> hailay.tedla@aalto.fi ·
+        <i class="fab fa-google-scholar"></i> scholar ·
+        <i class="fas fa-globe"></i> ORCID
+    </span>
+    <span style="font-size:0.85rem; opacity:0.7;">
+        <i class="fas fa-pen-fancy"></i> CV‑based · 2026
+    </span>
 </footer>
 
-<!-- all sections populated from CV content -->
 </body>
 </html>
